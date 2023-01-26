@@ -29,11 +29,9 @@
               border="1"
               width="150%"
               height="200"
-              cellspacing="5"
-              >
-                {% if mycars %}
+              cellspacing="5">
+                {% if mycars.exists %}
                 <caption> {{ mycar.user_id }} </caption>
-                
                 <thead>
                   <tr align="center">
                     <td> User_ID </td>
